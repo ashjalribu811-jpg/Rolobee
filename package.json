@@ -7,16 +7,21 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "node server.js"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "axios": "^1.13.6",
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.6",
     "dom": "^0.0.3",
-    "framer-motion": "^12.35.0",
+    "express": "^5.2.1",
+    "framer-motion": "^12.36.0",
+    "mongoose": "^9.3.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-icons": "^5.5.0",
+    "react-icons": "^5.6.0",
     "react-router": "^7.13.1",
     "react-router-dom": "^7.13.1"
   },
@@ -30,5 +35,18 @@
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
     "vite": "^7.3.1"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashjalribu811-jpg/Rolobee.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashjalribu811-jpg/Rolobee/issues"
+  },
+  "homepage": "https://github.com/ashjalribu811-jpg/Rolobee#readme"
 }
