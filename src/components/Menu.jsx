@@ -12,13 +12,13 @@ const Menu = ({ onBack, onExplore, setPage, logo, navItems, mobileMenuOpen, setM
           <div className="rotating-circle circle-3"></div>
         </div>
 
-        <Navbar 
-          onBack={onBack} 
-          logo={logo} 
-          navItems={navItems} 
-          setPage={setPage} 
-          mobileMenuOpen={mobileMenuOpen} 
-          setMobileMenuOpen={setMobileMenuOpen} 
+        <Navbar
+          onBack={onBack}
+          logo={logo}
+          navItems={navItems}
+          setPage={setPage}
+          mobileMenuOpen={mobileMenuOpen}
+          setMobileMenuOpen={setMobileMenuOpen}
           currentPage="menu"
         />
 
@@ -41,49 +41,17 @@ const Menu = ({ onBack, onExplore, setPage, logo, navItems, mobileMenuOpen, setM
               </button>
             </div>
           </div>
-
-          <div className="menu-right-content">
-            <div className="rotating-image-container">
-              <div className="rotating-image-wrapper">
-                <div className="rotating-image-ring ring-outer"></div>
-                <div className="rotating-image-ring ring-middle"></div>
-                <div className="rotating-image-ring ring-inner"></div>
-
-                <div className="rotating-image-core">
-                  <img
-                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80"
-                    alt="Strategy Innovation"
-                    className="rotating-img"
-                  />
-                </div>
-
-                <div className="floating-element element-1"><FiTrendingUp className="float-icon" /></div>
-                <div className="floating-element element-2"><FiTarget className="float-icon" /></div>
-                <div className="floating-element element-3"><FiZap className="float-icon" /></div>
-                <div className="floating-element element-4"><FiAward className="float-icon" /></div>
-
-                <div className="orbiting-dots">
-                  <div className="dot dot-1"></div>
-                  <div className="dot dot-2"></div>
-                  <div className="dot dot-3"></div>
-                  <div className="dot dot-4"></div>
-                  <div className="dot dot-5"></div>
-                  <div className="dot dot-6"></div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
       <div className="about-reaction-section premium-page">
         <div className="about-bg-overlay"></div>
         <div className="about-reaction-container">
-          <div className="expertise-header-light" style={{textAlign: 'center', marginBottom: '4rem'}}>
-            <h2 className="section-title-light" style={{fontSize: '3.5rem'}}>
+          <div className="expertise-header-light" style={{ textAlign: 'center', marginBottom: '4rem' }}>
+            <h2 className="section-title-light" style={{ fontSize: '3.5rem' }}>
               About <span className="text-gradient-light">Us</span>
             </h2>
-            <p className="section-description-light" style={{textAlign: 'center', margin: '1rem auto 0 auto', fontSize: '1.4rem', color: '#666', maxWidth: '600px'}}>
+            <p className="section-description-light" style={{ textAlign: 'center', margin: '1rem auto 0 auto', fontSize: '1.4rem', color: '#666', maxWidth: '600px' }}>
               We exist to make brands impossible to ignore.
             </p>
           </div>
@@ -91,7 +59,7 @@ const Menu = ({ onBack, onExplore, setPage, logo, navItems, mobileMenuOpen, setM
           <div className="about-reaction-content">
             <div className="reaction-left">
               <h3 className="reaction-statement">
-                Rolobee isn’t an agency.<br/>
+                Rolobee isn’t an agency.<br />
                 <span className="text-red">It’s a reaction.</span>
               </h3>
               <ul className="reaction-list">
@@ -100,18 +68,18 @@ const Menu = ({ onBack, onExplore, setPage, logo, navItems, mobileMenuOpen, setM
                 <li>A reaction to “good enough” marketing.</li>
               </ul>
             </div>
-            
+
             <div className="reaction-right">
               <p className="reaction-strong-text">
                 We think like creators, move like hackers, and execute like a machine built for growth. Every idea we touch is designed to do one thing: stop thumbs, spark emotion, and drive action.
               </p>
-              
-              <div className="reaction-divider"></div>
-              
+
+
+
               <p className="reaction-bold-points">
                 No templates. No recycled strategies. No fake hype.
               </p>
-              
+
               <p className="reaction-normal-text">
                 Just sharp thinking, fearless creativity, and campaigns that actually work in the real world — not just in presentations.
               </p>
@@ -119,8 +87,8 @@ const Menu = ({ onBack, onExplore, setPage, logo, navItems, mobileMenuOpen, setM
           </div>
 
           <div className="about-conclusion-box">
-             <p className="fade-text">If your brand wants to blend in, we’re not for you.</p>
-             <p className="highlight-outro">If your brand wants to dominate, <span className="text-red">welcome to Rolobee.</span></p>
+            <p className="fade-text">If your brand wants to blend in, we’re not for you.</p>
+            <p className="highlight-outro">If your brand wants to dominate, <span className="text-red">welcome to Rolobee.</span></p>
           </div>
         </div>
       </div>

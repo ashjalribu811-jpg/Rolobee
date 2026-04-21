@@ -60,11 +60,11 @@ export const projectsData = [
 ];
 
 export const teamMembers = [
-  { name: 'Raniya CT', role: 'CEO', img: ceo, desc: 'Leads the company with passion, creativity, and a strong vision for helping businesses grow' },
   { name: 'Ajmal Anfas', role: 'Digital Marketing Strategist', img: dm, desc: 'Delivering integrated digital solutions that enhance brand visibility, engagement, and revenue performance.' },
   { name: 'Thajudheen', role: 'Developer Head', img: th, desc: "He doesn't just write code — he builds digital experiences that help ideas come to life" },
   { name: 'Shabeeb Rahman', role: 'Creative Visualiser', img: sh, desc: 'Turns ideas into visuals that tell stories, capture attention, and bring brands to life.' },
   { name: 'Ashjal UK', role: 'Developer', img: ash, desc: 'Turns ideas into scalable digital solutions that power performance and drive impact.' },
+  { name: 'Raniya CT', role: 'CEO', img: ceo, desc: 'Leads the company with passion, creativity, and a strong vision for helping businesses grow' },
   { name: 'Coming Soon', role: 'Team Member', img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80', desc: 'Details for this team member will be added soon.' },
   { name: 'Coming Soon', role: 'Team Member', img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80', desc: 'Details for this team member will be added soon.' },
 ];
