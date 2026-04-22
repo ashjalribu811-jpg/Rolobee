@@ -1,11 +1,21 @@
 import React from 'react';
 import Navbar from './Navbar';
 import { FiArrowRight, FiTrendingUp, FiTarget, FiZap, FiAward } from 'react-icons/fi';
+import welcomeVideo from '../assets/videos/welcome.webm';
 
 const Menu = ({ onBack, onExplore, setPage, logo, navItems, mobileMenuOpen, setMobileMenuOpen }) => {
   return (
     <>
       <div className="menu-page">
+        <video
+          className="menu-bg-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src={welcomeVideo} type="video/webm" />
+        </video>
         <div className="rotating-bg">
           <div className="rotating-circle circle-1"></div>
           <div className="rotating-circle circle-2"></div>
