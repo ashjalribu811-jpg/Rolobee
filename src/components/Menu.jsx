@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import { FiArrowRight, FiTrendingUp, FiTarget, FiZap, FiAward } from 'react-icons/fi';
-import welcomeVideo from '../assets/videos/welcome.webm';
+import carVideo from '../assets/videos/car theme 1313.webm';
 
 const Menu = ({ onBack, onExplore, setPage, logo, navItems, mobileMenuOpen, setMobileMenuOpen }) => {
   return (
@@ -14,7 +14,7 @@ const Menu = ({ onBack, onExplore, setPage, logo, navItems, mobileMenuOpen, setM
           muted
           playsInline
         >
-          <source src={welcomeVideo} type="video/webm" />
+          <source src={carVideo} type="video/mp4" />
         </video>
         <div className="rotating-bg">
           <div className="rotating-circle circle-1"></div>
@@ -37,11 +37,11 @@ const Menu = ({ onBack, onExplore, setPage, logo, navItems, mobileMenuOpen, setM
             <div className="quote-container">
               <span className="quote-icon">"</span>
               <h1 className="main-quote">
-                <span className="quote-line">We are</span>
-                <span className="quote-line highlight">Strategy</span>
-                <span className="quote-line">Innovation</span>
-                <span className="quote-line highlight">Impact</span>
-                <span className="quote-line">Consultants.</span>
+                <span className="quote-line">Where</span>
+                <span className="quote-line highlight">Brands</span>
+                <span className="quote-line">Learn to</span>
+                <span className="quote-line highlight">Speak</span>
+
               </h1>
 
               <div className="quote-divider"></div>
