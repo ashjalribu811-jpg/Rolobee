@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import { FiArrowRight, FiTrendingUp, FiTarget, FiZap, FiAward } from 'react-icons/fi';
 import carVideo from '../assets/videos/car theme 1313.webm';
+import bgImage from '../assets/images/bg.jpeg';
 
 const Menu = ({ onBack, onExplore, setPage, logo, navItems, mobileMenuOpen, setMobileMenuOpen }) => {
   return (
@@ -14,7 +15,7 @@ const Menu = ({ onBack, onExplore, setPage, logo, navItems, mobileMenuOpen, setM
           muted
           playsInline
         >
-          <source src={carVideo} type="video/mp4" />
+          <source src={carVideo} type="video/webm" />
         </video>
         <div className="rotating-bg">
           <div className="rotating-circle circle-1"></div>
@@ -41,7 +42,6 @@ const Menu = ({ onBack, onExplore, setPage, logo, navItems, mobileMenuOpen, setM
                 <span className="quote-line highlight">Brands</span>
                 <span className="quote-line">Learn to</span>
                 <span className="quote-line highlight">Speak</span>
-
               </h1>
 
               <div className="quote-divider"></div>
@@ -55,6 +55,7 @@ const Menu = ({ onBack, onExplore, setPage, logo, navItems, mobileMenuOpen, setM
       </div>
 
       <div className="about-reaction-section premium-page">
+        <div className="about-bg-image" style={{ backgroundImage: `url(${bgImage})` }}></div>
         <div className="about-bg-overlay"></div>
         <div className="about-reaction-container">
           <div className="expertise-header-light" style={{ textAlign: 'center', marginBottom: '4rem' }}>
