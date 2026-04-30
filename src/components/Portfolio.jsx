@@ -31,16 +31,16 @@ const Portfolio = ({ onBack, logo, navItems, setPage, mobileMenuOpen, setMobileM
               Social Media
             </button>
             <button 
+              className={`filter-btn ${activeCategory === 'brochures' ? 'active' : ''}`} 
+              onClick={() => filterProjects('brochures')}
+            >
+              Brochures
+            </button>
+            <button 
               className={`filter-btn ${activeCategory === 'branding' ? 'active' : ''}`} 
               onClick={() => filterProjects('branding')}
             >
               Branding
-            </button>
-            <button 
-              className={`filter-btn ${activeCategory === 'video production' ? 'active' : ''}`} 
-              onClick={() => filterProjects('video production')}
-            >
-              Video Production
             </button>
           </div>
 

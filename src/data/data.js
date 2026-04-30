@@ -15,6 +15,12 @@ import sm6 from "../assets/images/6.jpg.jpeg";
 import sm7 from "../assets/images/7.jpg.jpeg";
 import sm8 from "../assets/images/lifebay.jpg.jpeg";
 
+import br1 from "../assets/images/bropchure-1.jpg.jpeg";
+import br2 from "../assets/images/bropchure--2.jpg.jpeg";
+import br3 from "../assets/images/brochure-3.jpg.jpeg";
+import br4 from "../assets/images/bropchure-4.jpg.jpeg";
+import br5 from "../assets/images/brochure-5.jpg.jpeg";
+
 export const projectsData = [
   {
     id: 1,
@@ -25,13 +31,27 @@ export const projectsData = [
   },
   {
     id: 2,
+    name: 'Glass Decors',
+    category: 'brochures',
+    image: br3,
+    description: 'Elegant event guide and schedule.'
+  },
+  {
+    id: 3,
     name: 'Social Media Creatives',
     category: 'social media',
     image: sm7,
     description: 'Local engagement and brand personality.'
   },
   {
-    id: 3,
+    id: 4,
+    name: 'Beauty & Health',
+    category: 'brochures',
+    image: br5,
+    description: 'Immersive travel destinations and tips.'
+  },
+  {
+    id: 5,
     name: 'Smart Automation',
     client: 'Foxomate',
     category: 'social media',
@@ -39,7 +59,14 @@ export const projectsData = [
     description: 'Educational content and customer loyalty.'
   },
   {
-    id: 4,
+    id: 6,
+    name: 'Home Automation',
+    category: 'brochures',
+    image: br1,
+    description: 'Professional business presentation.'
+  },
+  {
+    id: 7,
     name: 'Haven Homestead',
     client: 'Realestate',
     category: 'social media',
@@ -47,7 +74,14 @@ export const projectsData = [
     description: 'Engaging social media content and management.'
   },
   {
-    id: 5,
+    id: 8,
+    name: 'Educational Institute',
+    category: 'brochures',
+    image: br2,
+    description: 'Detailed product catalog and features.'
+  },
+  {
+    id: 9,
     name: 'Veloura',
     client: 'Skin Care Clinic',
     category: 'social media',
@@ -55,7 +89,14 @@ export const projectsData = [
     description: 'Visual storytelling and brand awareness.'
   },
   {
-    id: 6,
+    id: 10,
+    name: 'Construction',
+    category: 'brochures',
+    image: br4,
+    description: 'Creative agency portfolio and services.'
+  },
+  {
+    id: 11,
     name: 'TenderBliss',
     client: 'Maternity Hospital',
     category: 'social media',
@@ -63,7 +104,7 @@ export const projectsData = [
     description: 'Product launches and community engagement.'
   },
   {
-    id: 7,
+    id: 12,
     name: 'Istanbul Rolls & Grills',
     client: 'Restaurant',
     category: 'social media',
@@ -71,7 +112,7 @@ export const projectsData = [
     description: 'Influencer marketing and content strategy.'
   },
   {
-    id: 8,
+    id: 13,
     name: 'LifeBay',
     client: 'Wellness & Beauty Clinic',
     category: 'social media',

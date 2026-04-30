@@ -16,7 +16,7 @@ const Footer = ({ logo, navItems, setPage }) => {
             <div className="footer-column">
               <h4>Navigation</h4>
               <ul>
-                <li onClick={() => { setPage('home'); window.scrollTo(0, 0); }}>Home</li>
+
                 {navItems.map(item => (
                   <li key={item.id} onClick={() => { setPage(item.id); window.scrollTo(0, 0); }}>{item.label}</li>
                 ))}

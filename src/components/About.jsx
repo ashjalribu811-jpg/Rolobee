@@ -16,7 +16,7 @@ const About = ({ onBack, setPage, logo, navItems, mobileMenuOpen, setMobileMenuO
         >
           <source src={carVideo} type="video/webm" />
         </video>
-        
+
         <Navbar
           onBack={onBack}
           logo={logo}
@@ -54,14 +54,6 @@ const About = ({ onBack, setPage, logo, navItems, mobileMenuOpen, setMobileMenuO
               <div className="reaction-right">
                 <p className="reaction-strong-text">
                   We think like creators, move like hackers, and execute like a machine built for growth. Every idea we touch is designed to do one thing: stop thumbs, spark emotion, and drive action.
-                </p>
-
-                <p className="reaction-bold-points">
-                  No templates. No recycled strategies. No fake hype.
-                </p>
-
-                <p className="reaction-normal-text">
-                  Just sharp thinking, fearless creativity, and campaigns that actually work in the real world — not just in presentations.
                 </p>
               </div>
             </div>
