@@ -1,7 +1,8 @@
 import React from 'react';
 import Navbar from './Navbar';
+import { motion, AnimatePresence } from 'framer-motion';
 
-const Portfolio = ({ onBack, logo, navItems, setPage, mobileMenuOpen, setMobileMenuOpen, projects, filterProjects }) => {
+const Portfolio = ({ onBack, logo, navItems, setPage, mobileMenuOpen, setMobileMenuOpen, projects, filterProjects, activeCategory }) => {
   return (
     <div className="portfolio-page premium-page">
       <Navbar 
@@ -17,25 +18,55 @@ const Portfolio = ({ onBack, logo, navItems, setPage, mobileMenuOpen, setMobileM
       <div className="portfolio-content premium-content-section">
         <div className="content-body">
           <div className="portfolio-filters">
-            <button className="filter-btn active" onClick={(e) => filterProjects('all', e)}>All Projects</button>
-            <button className="filter-btn" onClick={(e) => filterProjects('social media', e)}>Social Media</button>
-            <button className="filter-btn" onClick={(e) => filterProjects('branding', e)}>Branding</button>
-            <button className="filter-btn" onClick={(e) => filterProjects('video production', e)}>Video Production</button>
+            <button 
+              className={`filter-btn ${activeCategory === 'all' ? 'active' : ''}`} 
+              onClick={() => filterProjects('all')}
+            >
+              All Projects
+            </button>
+            <button 
+              className={`filter-btn ${activeCategory === 'social media' ? 'active' : ''}`} 
+              onClick={() => filterProjects('social media')}
+            >
+              Social Media
+            </button>
+            <button 
+              className={`filter-btn ${activeCategory === 'branding' ? 'active' : ''}`} 
+              onClick={() => filterProjects('branding')}
+            >
+              Branding
+            </button>
+            <button 
+              className={`filter-btn ${activeCategory === 'video production' ? 'active' : ''}`} 
+              onClick={() => filterProjects('video production')}
+            >
+              Video Production
+            </button>
           </div>
 
-          <div className="portfolio-grid">
-            {projects.map(project => (
-              <div key={project.id} className="portfolio-item" data-category={project.category || 'branding'}>
-                <div className="portfolio-image">
-                  <img src={project.image} alt={project.name} />
-                </div>
-                <div className="portfolio-info">
-                  <h4>{project.name}</h4>
-                  <p>{project.client}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <motion.div layout className="portfolio-grid">
+            <AnimatePresence mode="popLayout">
+              {projects.map(project => (
+                <motion.div 
+                  layout
+                  key={project.id} 
+                  className="portfolio-item"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{ duration: 0.4 }}
+                >
+                  <div className="portfolio-image">
+                    <img src={project.image} alt={project.name} />
+                  </div>
+                  <div className="portfolio-info">
+                    <h4>{project.name}</h4>
+                    <p>{project.client}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </AnimatePresence>
+          </motion.div>
 
           <div className="portfolio-stats">
             <div className="portfolio-stat-card">

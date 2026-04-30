@@ -13,7 +13,7 @@ import Menu from './components/Menu';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Team from './components/Team';
-import Life from './components/Life';
+
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -68,14 +68,15 @@ function App() {
 
   // Custom navigation handler to inject loading animation
   const navigateToPage = (newPage) => {
-    if (page === newPage) return;
+    const targetPage = newPage === "home" ? "menu" : newPage;
+    if (page === targetPage) return;
     
     setIsTransitioning(true);
     setMobileMenuOpen(false);
     
     // Artificial delay for smooth premium transition feel
     setTimeout(() => {
-      setPage(newPage);
+      setPage(targetPage);
       window.scrollTo(0, 0);
       
       // Remove loading overlay after page is ready
@@ -101,6 +102,8 @@ function App() {
   const formRef = useRef();
 
   const [projects] = useState(projectsData);
+  const [filteredProjects, setFilteredProjects] = useState(projectsData);
+  const [activeCategory, setActiveCategory] = useState('all');
 
   // Form handlers for EmailJS
   const handleInputChange = (e) => {
@@ -175,24 +178,13 @@ function App() {
   const handleBackClick = () => navigateToPage("home");
   const handleBackToMenuClick = () => navigateToPage("menu");
 
-  const filterProjects = (category, e) => {
-    const buttons = document.querySelectorAll('.filter-btn');
-    buttons.forEach(btn => btn.classList.remove('active'));
-    e.target.classList.add('active');
-
-    const items = document.querySelectorAll('.portfolio-item');
-    items.forEach(item => {
-      if (category === 'all') {
-        item.style.display = 'block';
-      } else {
-        const itemCategory = item.getAttribute('data-category').toLowerCase();
-        if (itemCategory === category.toLowerCase()) {
-          item.style.display = 'block';
-        } else {
-          item.style.display = 'none';
-        }
-      }
-    });
+  const filterProjects = (category) => {
+    setActiveCategory(category);
+    if (category === 'all') {
+      setFilteredProjects(projects);
+    } else {
+      setFilteredProjects(projects.filter(p => p.category.toLowerCase() === category.toLowerCase()));
+    }
   };
 
   return (
@@ -248,8 +240,9 @@ function App() {
           setPage={navigateToPage} 
           mobileMenuOpen={mobileMenuOpen} 
           setMobileMenuOpen={setMobileMenuOpen}
-          projects={projects}
+          projects={filteredProjects}
           filterProjects={filterProjects}
+          activeCategory={activeCategory}
         />
       )}
 
@@ -266,16 +259,7 @@ function App() {
         />
       )}
 
-      {page === "life" && (
-        <Life 
-          onBack={handleBackToMenuClick} 
-          logo={logo} 
-          navItems={navItems} 
-          setPage={navigateToPage} 
-          mobileMenuOpen={mobileMenuOpen} 
-          setMobileMenuOpen={setMobileMenuOpen}
-        />
-      )}
+
 
       {page === "contact" && (
         <Contact 

@@ -62,7 +62,7 @@ const Menu = ({ onBack, onExplore, setPage, logo, navItems, mobileMenuOpen, setM
             <h2 className="section-title-light" style={{ fontSize: '3.5rem' }}>
               About <span className="text-gradient-light">Us</span>
             </h2>
-            <p className="section-description-light" style={{ textAlign: 'center', margin: '1rem auto 0 auto', fontSize: '1.4rem', color: '#666', maxWidth: '600px' }}>
+            <p className="section-description-light" style={{ textAlign: 'center', margin: '1rem auto 0 auto', fontSize: '1.4rem', maxWidth: '600px' }}>
               We exist to make brands impossible to ignore.
             </p>
           </div>

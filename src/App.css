@@ -1236,8 +1236,8 @@ body {
   position: absolute;
   inset: 0;
   background-image: 
-    linear-gradient(rgba(255, 37, 36, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 37, 36, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(255, 37, 36, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 37, 36, 0.1) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
@@ -4520,8 +4520,8 @@ body {
   position: absolute;
   inset: 0;
   background-image: 
-    linear-gradient(rgba(255, 37, 36, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 37, 36, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(255, 37, 36, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 37, 36, 0.1) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
@@ -5063,8 +5063,8 @@ body {
   position: absolute;
   inset: 0;
   background-image: 
-    linear-gradient(rgba(255, 37, 36, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 37, 36, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(255, 37, 36, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 37, 36, 0.1) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
@@ -6944,7 +6944,7 @@ NO IMAGE EFFECTS, BIGGER ICONS
 
 .reaction-list li {
   font-size: 1.3rem;
-  color: #ccc;
+  color: #fff;
   margin-bottom: 1rem;
   position: relative;
   padding-left: 2rem;
@@ -6961,7 +6961,7 @@ NO IMAGE EFFECTS, BIGGER ICONS
 .reaction-strong-text {
   font-size: 1.3rem;
   line-height: 1.6;
-  color: #ccc;
+  color: #fff;
   margin-bottom: 2.5rem;
   font-weight: 500;
   letter-spacing: -0.01em;
@@ -6993,13 +6993,13 @@ NO IMAGE EFFECTS, BIGGER ICONS
 }
 
 .about-reaction-section .section-description-light {
-  color: #ccc !important;
+  color: #fff !important;
 }
 
 .reaction-normal-text {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #ccc;
+  color: #fff;
 }
 
 .about-conclusion-box {
@@ -7017,7 +7017,7 @@ NO IMAGE EFFECTS, BIGGER ICONS
 
 .about-conclusion-box .fade-text {
   font-size: 1.2rem;
-  color: #aaa;
+  color: #fff;
   margin-bottom: 1rem;
 }
 
