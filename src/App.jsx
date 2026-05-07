@@ -68,7 +68,7 @@ function App() {
 
   // Custom navigation handler to inject loading animation
   const navigateToPage = (newPage) => {
-    const targetPage = newPage === "home" ? "menu" : newPage;
+    const targetPage = newPage;
     if (page === targetPage) return;
     
     setIsTransitioning(true);
