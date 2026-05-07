@@ -5,39 +5,39 @@ import { motion, AnimatePresence } from 'framer-motion';
 const Portfolio = ({ onBack, logo, navItems, setPage, mobileMenuOpen, setMobileMenuOpen, projects, filterProjects, activeCategory }) => {
   return (
     <div className="portfolio-page premium-page">
-      <Navbar 
-        onBack={onBack} 
-        logo={logo} 
-        navItems={navItems} 
-        setPage={setPage} 
-        mobileMenuOpen={mobileMenuOpen} 
-        setMobileMenuOpen={setMobileMenuOpen} 
+      <Navbar
+        onBack={onBack}
+        logo={logo}
+        navItems={navItems}
+        setPage={setPage}
+        mobileMenuOpen={mobileMenuOpen}
+        setMobileMenuOpen={setMobileMenuOpen}
         currentPage="portfolio"
       />
 
       <div className="portfolio-content premium-content-section">
         <div className="content-body">
           <div className="portfolio-filters">
-            <button 
-              className={`filter-btn ${activeCategory === 'all' ? 'active' : ''}`} 
+            <button
+              className={`filter-btn ${activeCategory === 'all' ? 'active' : ''}`}
               onClick={() => filterProjects('all')}
             >
               All Projects
             </button>
-            <button 
-              className={`filter-btn ${activeCategory === 'social media' ? 'active' : ''}`} 
+            <button
+              className={`filter-btn ${activeCategory === 'social media' ? 'active' : ''}`}
               onClick={() => filterProjects('social media')}
             >
               Social Media
             </button>
-            <button 
-              className={`filter-btn ${activeCategory === 'brochures' ? 'active' : ''}`} 
+            <button
+              className={`filter-btn ${activeCategory === 'brochures' ? 'active' : ''}`}
               onClick={() => filterProjects('brochures')}
             >
               Brochures
             </button>
-            <button 
-              className={`filter-btn ${activeCategory === 'branding' ? 'active' : ''}`} 
+            <button
+              className={`filter-btn ${activeCategory === 'branding' ? 'active' : ''}`}
               onClick={() => filterProjects('branding')}
             >
               Branding
@@ -47,9 +47,9 @@ const Portfolio = ({ onBack, logo, navItems, setPage, mobileMenuOpen, setMobileM
           <motion.div layout className="portfolio-grid">
             <AnimatePresence mode="popLayout">
               {projects.map(project => (
-                <motion.div 
+                <motion.div
                   layout
-                  key={project.id} 
+                  key={project.id}
                   className="portfolio-item"
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
@@ -68,24 +68,7 @@ const Portfolio = ({ onBack, logo, navItems, setPage, mobileMenuOpen, setMobileM
             </AnimatePresence>
           </motion.div>
 
-          <div className="portfolio-stats">
-            <div className="portfolio-stat-card">
-              <span className="portfolio-stat-number">250+</span>
-              <span className="portfolio-stat-label">Projects</span>
-            </div>
-            <div className="portfolio-stat-card">
-              <span className="portfolio-stat-number">100+</span>
-              <span className="portfolio-stat-label">Happy Clients</span>
-            </div>
-            <div className="portfolio-stat-card">
-              <span className="portfolio-stat-number">15+</span>
-              <span className="portfolio-stat-label">Brand Partners</span>
-            </div>
-            <div className="portfolio-stat-card">
-              <span className="portfolio-stat-number">25+</span>
-              <span className="portfolio-stat-label">Team Members</span>
-            </div>
-          </div>
+
 
           <div className="portfolio-testimonials">
             <h2>What Our Clients Say</h2>
